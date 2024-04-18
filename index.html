@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1.0″
+        <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+        <title> Main LDC</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <ul id="mainnavbar">
+            <li>
+                <input type="button" class="LnR active" id = "Main" value="Home">
+                <span class="material-symbols-outlined homeicon">
+                    home
+                    </span>
+            </li>
+            <li>
+                <input type="button" class="LnR" id = "Forum" value="Forum">
+                <span class="material-symbols-outlined forumicon">
+                    forum
+                    </span>
+            </li>
+            <li style="float: right;">
+                <input type="button" class="LnR" id = "Login" value="Login" onclick="location.href='login.html'">
+                <span class="material-symbols-outlined loginicon">
+                login
+                </span>
+            </li>
+            <li style="float: right;">
+                <input type="button" class="LnR" id = "Register" value="Register">
+                <span class="material-symbols-outlined registericon">
+                    how_to_reg
+                    </span>
+            </li>
+            <li style="float: right;">
+                <input type="button" class="LnR" id = "manage_accounts" value="Accounts">
+                <span class="material-symbols-outlined manage_accountsicon">
+                    manage_accounts
+                    </span>
+            </li>
+        </ul>
+        <script>
+            let login = document.ElementById("Login")
+            let manageAccounts = document.getElementById("manage_accounts")
+            let register = document.getElementById("Register")
+            let Home = document.getElementById("Main")
+            let forum = document.getElementById("Forum")
+            var IDValid = true
+            function Loaded() {
+                if (IDValid = false) {
+                    manageAccounts.style.display = "none";
+                    Login.style.display = "block";
+                    register.style.display = "block";
+                } else if (IDValid = true) {
+                    manageAccounts.style.display = "block";
+                    Login.style.display = "none";
+                    register.style.display = "none";
+                }
+            }
+            Loaded()
+        </script>
+    </body>
+</html>
