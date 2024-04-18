@@ -47,18 +47,15 @@
             let Home = document.getElementById("Main")
             let forum = document.getElementById("Forum")
             var IDValid = true
-            function Loaded() {
-                if (IDValid = false) {
-                    manageAccounts.style.display = "none";
-                    Login.style.display = "block";
-                    register.style.display = "block";
-                } else if (IDValid = true) {
-                    manageAccounts.style.display = "block";
-                    Login.style.display = "none";
-                    register.style.display = "none";
-                }
+            if (IDValid = false) {
+                manageAccounts.style.display = "none";
+                Login.style.display = "block";
+                register.style.display = "block";
+            } else if (IDValid = true) {
+                manageAccounts.style.display = "block";
+                Login.style.display = "none";
+                register.style.display = "none";
             }
-            Loaded()
         </script>
     </body>
 </html>
